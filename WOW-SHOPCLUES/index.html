@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW-SHOPCLUES</title>
+    <style>
+        #nav1{
+            width: 100%;
+            /* border: 2px solid green; */
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            font-family: 'Poppins', sans-serif;
+            position: sticky;
+            top: 0;padding: top;
+            z-index:10;
+            background-color: white;        
+        }
+        #logo{
+            width: 8%;
+            display: flex;
+            align-items: center;
+        }
+        #logo img{
+            width: 100%;
+            height: 80px;
+        }
+        #icon{
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #icon img{
+            width: 7%;
+        }
+        .location{
+            color: #49A3B5;
+        }
+        .baza{
+            font-size: 15px;
+            color: #49A3B5;
+        }
+        #inputbox{
+            width: 45%;
+            display: flex; 
+            align-items: center;
+            background-color: #E9F6F7;
+            font-size: 20px;
+            margin-left: 30px;
+            padding-left: 12px;
+            border-radius: 5px;
+        }
+        #inputbox>img{
+            width: 4%;
+        }
+        #searchbox{
+            width: 300px;
+            border: none;
+            background-color: #E9F6F7;
+            font-size: 20px;
+           padding-right: 180px;
+           padding-left: 10px;
+        }
+        #submit{
+            background: linear-gradient(to left,#EB615C  10%, #ed8c4b 100%);
+            border: none;
+            font-size: 20px;
+            padding: 10px 30px 10px 30px;
+            color: white;
+            cursor: pointer;
+        }
+        #icon>a{
+            text-decoration: none;
+            color: black;
+        }
+        #nav2{
+            width: 100%;
+            background-color: #49A3B5;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px;
+            position: fixed;
+            top: -50px;
+            transition: top 0.3s;
+
+            
+            
+        }
+        #nav2>div{
+            width: 65%;
+            display: flex;
+            height: 50px;
+            margin: auto;
+            align-items: center;
+            justify-content: space-between; 
+             
+        }
+        #nav2>div>img{
+            width: 9%;
+            align-items: center;
+        }
+        #nav2>div>a{
+            color:white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        #nav3{
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        #nav3>div{
+            width: 80%;
+            display: flex;
+            height: 40px;
+            margin: auto;
+            align-items: center;
+            justify-content: space-between;  
+        }
+        #nav3>div>a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #5D5D5D;
+        }
+        #ad{
+            width: 98%;
+            height: 350px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+        #imgads{
+            width: 80%;
+            height: 350px;
+        }
+        #imgads img{
+            width: 100%;
+            height: 350px;
+            border-radius: 4px;
+        }
+        #smallad{
+            height: 400px;
+            width: 20%;
+            border-radius: 7px;
+        }
+        #smallad>div>img{
+            width: 84%;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            display: block;
+            margin: auto;
+        }
+        #nav4{
+            width: 74%;
+            height: 50px;
+            display: flex;
+            margin-left: 15px;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-radius: 3px;
+        }
+        #nav4>a{
+            text-decoration: none;
+            color: #5D5D5D;
+        }
+        #card1{
+            width: 98%;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #incard1{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        #incard1>div>img{
+            width: 70%;
+            
+        }
+        #incard1>div>p{
+            color: #5D5D5D;
+        }
+        #incard1>div:hover{
+            border: 1px solid #49A3B5;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+          
+        }
+        #under{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .off{
+            color: #49A3B5;
+        }
+        .cl{
+            color: #5D5D5D;
+        }
+        
+        
+
+
+      
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div id="logo">
+            <img src="/wONDER SHOP.png" alt="">
+            <h3>WOW SHOPCLUES <span class="baza">bazaar</span></h3>
+        </div>
+        <div id="inputbox">
+            <img src="https://cdn-icons-png.flaticon.com/512/107/107122.png" alt="">
+                <input type="text" placeholder="What is in your mind today"  id="searchbox">
+                <button id="submit">Search</button>
+        </div>
+        <div id="icon">
+            <p>Share <br><span class="location">Location</span></p>
+            <img src="https://cdn-icons-png.flaticon.com/512/819/819865.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/2961/2961957.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/2838/2838895.png" alt="">
+            <a href="">Sign In</a>
+        </div>
+    </div>
+    <div id="nav2">
+        <div>
+            <img src="https://images.shopclues.com/images/ui/madeinindia.png" alt="">
+            <a href="">MOBILES & MORE</a>
+            <a href="">MEN</a>
+            <a href="">WOMEN</a>
+            <a href="">HOME & KITCHEN</a>
+            <a href="">APPLIANCES</a>
+            <a href="">SPORTS & MORE</a>
+            <a href="">ESSENTIALS</a>
+            <a href="">OFFERS</a>
+            <a href="">GLOBAL SHOPPING</a>
+        </div>
+    </div>
+    <div id="nav3">
+        <div>
+            <a href="">Time Sales</a>
+            <a href="">Flu Care</a>
+            <a href="">Food & Beverage</a>
+            <a href="">Personal Hygiene</a>
+            <a href="">Home Cleaning</a>
+            <a href="">Nutrition & Supplements</a>
+            <a href="">Kitchen & Dining</a>
+            <a href="">Refurbished Mobiles</a>
+            <a href="">Mobile Accessories</a>
+        </div>
+    </div>
+    <div id="ad">
+        <div id="imgads"></div>
+       
+        <div id="smallad">
+            <div>
+                <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum2_SYM_06Dec22.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images/banners/2022/dec/02/Platinum3_Esha_2ndDec22.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="nav4">
+        <a href="">Grand Republic Day Sale</a>
+        <a href="">Prebuzz</a>
+        <a href="">Jaw Dropping Deals</a>
+        <a href="">JMAX Smartphones</a>
+        <a href="">Asus</a>
+    </div>
+
+    <div id="card1">
+        <h2>Deals of the Day</h2>
+        <div id="incard1">
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1659944528.jpg" alt="">
+                <p>Venerate Headphone Stand</p>
+                <div id="under">
+                    <h3>₹269</h3>
+                    <h4 class="cl"><s>₹1,999</s></h4>
+                    <h4 class="off">87% off</h4>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/81476/200/200/135627858-81476269-1665754103.jpg" alt="">
+                <p>MTR MT310 Dual Sim</p>
+                <div id="under">
+                    <h3>₹749</h3>
+                    <h4 class="cl"><s>₹999</s></h4>
+                    <h4 class="off">25% off</h4>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg" alt="">
+                <p>Premium Quality Nylon</p>
+                <div id="under">
+                    <h3>₹250</h3>
+                    <h4 class="cl"><s>₹399</s></h4>
+                    <h4 class="off">37% off</h4>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/115737/200/200/152853766-115737455-1637323013.jpg" alt="">
+                <p>Premium Quality Nylon</p>
+                <div id="under">
+                    <h3>₹250</h3>
+                    <h4 class="cl"><s>₹389</s></h4>
+                    <h4 class="off">84% off</h4>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/115044/200/200/152634665-115044372-1629705035.jpg" alt="">
+                <p>ZEB-UCC100 2.0 Data Charging</p>
+                <div id="under">
+                    <h3>₹139</h3>
+                    <h4 class="cl"><s>₹899</s></h4>
+                    <h4 class="off">85% off</h4>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.shopclues.com/images1/thumbnails/95123/200/200/142672875-95123237-1645016499.jpg" alt="">
+                <p>USB Type-C to Type-A 3.0</p>
+                <div id="under">
+                    <h3>₹302</h3>
+                    <h4 class="cl"><s>₹499</s></h4>
+                    <h4 class="off">39% off</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+    <script>
+        
+
+        let arr=
+        ["https://cdn.shopclues.com/images/banners/2023/Jan/18/HB1_GRDS_Web_NCP_18Jan23.jpg","https://cdn.shopclues.com/images/banners/2023/Jan/15/HB5_Asus_Web_Riya_15Jan22.jpg","https://cdn.shopclues.com/images/banners/2023/Jan/18/Jdd_HB3_Web_Riya_18Jan23.jpg","https://cdn.shopclues.com/images/banners/2023/Jan/18/HB4_JMAX_Web_Esha_18Jan23.jpg"]
+        adslideshow(arr)
+        function adslideshow(arr){
+            let c=0;
+            let ads=document.getElementById("imgads");
+            let img=document.createElement("img");
+            setInterval(()=>{
+                if(c==arr.length){
+                    c=0;
+                }
+                img.src=arr[c]
+                ads.append(img)
+                c++;
+            },4000)
+        }
+        
+
+        
+    </script>
+</html>
