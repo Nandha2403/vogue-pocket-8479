@@ -1,0 +1,145 @@
+{
+    "data":[
+        {   
+            "title":"Venerate Headphone Stand",
+            "category":"Electronics",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1659944528.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"MTR MT310 Dual Sim",
+            "category":"Electronics",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/81476/200/200/135627858-81476269-1665754103.jpg",
+            "price":"749",
+            "id":"2"
+           
+        },
+        {
+            "title": "Premium Quality Nylon",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg",
+            "price": "250",
+            "id": "3"
+        },
+        {
+            "title": "Lenovo",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116317/280/1/153067614-116317109-1655139568.jpg",
+            "price": "14999",
+            "id": "4"
+        },
+        {
+            "title": "ZEB-UCC100 2.0 Data Charging",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115044/200/200/152634665-115044372-1629705035.jpg",
+            "price": "139",
+            "id": "5"
+        },
+        {
+            "title": "USB Type-C to Type-A 3.0",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/95123/200/200/142672875-95123237-1645016499.jpg",
+            "price": "302",
+            "id": "6"
+        },
+        {
+            "title": "Dizom Dz-104 Hip-Hop Series",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115737/200/200/152853766-115737455-1637323013.jpg",
+            "price": "389",
+            "id": "7"
+        },
+        {
+            "title": "Refurbished HP 745 G2 AMD",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116251/280/1/153050559-116251648-1668507822.jpg",
+            "price": "14999",
+            "id": "8"
+        },
+        {
+            "title": "Samsung Galaxy Tab S3 ",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/100282/320/320/146108718-100282238-1558345152.jpg",
+            "price": "24059",
+            "id": "9"
+        },
+        {
+            "title": "Refurbished iPhone 5S",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/112439/280/1/151644357-112439509-1668508088.jpg",
+            "price": "7299",
+            "id": "10"
+        },
+        {
+            "title": "Refurbished Nokia 1110",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/56727/280/1/85444779-56727506-1668506622.jpg",
+            "price": "929",
+            "id": "11"
+        },
+        {
+            "title": "Refurbished Nokia",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/111747/280/1/151309025-111747668-1665754117.jpg",
+            "price": "1429",
+            "id": "12"
+        },
+        {
+            "title": "Refurbished Nokia 5310",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/104955/280/1/148961799-104955508-1581584861.jpg",
+            "price": "1629",
+            "id": "13"
+        },
+        {
+            "title": "Lenovo",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116317/280/1/153067614-116317109-1655139568.jpg",
+            "price": "14999",
+            "id": "14"
+        },
+        {
+            "title": "BlackBerry",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116428/280/1/153096476-116428205-1657965938.jpg",
+            "price": "8990",
+            "id": "15"
+        },
+        {
+            "title": "XOLO",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/114284/280/1/152351322-114284932-1621836892.jpg",
+            "price": "3490",
+            "id": "16"
+        },
+        {
+            "title": "Nokia",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115728/280/1/152850160-115728575-1665757099.jpg",
+            "price": "1399",
+            "id": "17"
+        },
+        {
+            "title": "DELL LATITUDE",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115708/280/1/152842587-115708020-1635756280.jpg",
+            "price": "13000",
+            "id": "18"
+        },
+        {
+            "title": "Nokia",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/108209/280/1/150232597-108209685-1593363656.jpg",
+            "price": "999",
+            "id": "19"
+        },
+        {
+            "title": "Redmi",
+            "category": "Electronics",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/113389/280/1/152073100-113389174-1615035269.jpg",
+            "price": "8699",
+            "id": "20"
+        }
+    ]
+}

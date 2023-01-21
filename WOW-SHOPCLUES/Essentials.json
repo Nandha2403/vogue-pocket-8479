@@ -1,0 +1,40 @@
+{
+    "data":[
+        {   
+            "title":"Nap Raisin",
+            "category":"Essentials",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/71358/280/1/128578975-71358850-1664734769.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"Kessari",
+            "category":"Essentials",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/36494/280/1/83737895-36494852-1653511542.jpg",
+            "price":"149",
+            "id":"2"
+           
+        },
+        {
+            "title": "Valleynuts",
+            "category": "Essentials",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/36725/280/1/91934860-36725236-1611310434.jpg",
+            "price": "550",
+            "id": "3"
+        },
+        {
+            "title": "Surbhi",
+            "category": "Essentials",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/4406/280/1/78780518-4406349-1653510592.jpg",
+            "price": "199",
+            "id": "4"
+        },
+        {
+            "title": "Face mask",
+            "category": "Essentials",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/72654/280/1/129650665-72654272-1660928069.jpg",
+            "price": "529",
+            "id": "5"
+        }
+    ]
+}
