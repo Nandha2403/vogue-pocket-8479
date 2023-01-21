@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartPage</title>
+</head>
+<style>
+    #Nav{
+        display: flex;
+        width: 90%;
+        border: 1px solid greenyellow;
+        height: 60px;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        color: #49A3B5;
+    }
+    #Nav>a{
+        text-decoration: none;
+        font-size: 25px;
+        color: blueviolet;
+
+    }
+    #total{
+        text-align: center;
+    }
+    #cart-total{
+        color: green;
+    }
+    #cart-container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        border: 1px solid violet;
+        margin: auto;
+        text-align: center;
+    }
+    #cart-container>div{
+        width: 100%;
+            margin: auto;
+            height: 300px;
+    }
+    #cart-container>div:hover{
+        border: 1px solid #49A3B5;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    }
+    #cart-container>div>img{
+        height: 160px;
+    }
+    #cart-container>div>button{
+        cursor: pointer;
+        background-color: #49A3B5;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        margin: 10px;
+    }
+
+</style>
+<body>
+    <div id="Nav">
+        <h1>CartPage</h1>
+        <a href="/index.html">Home</a>
+    </div>
+    <h1 id="total">
+        Your Total Cart Price is:- <span id="cart-total">0</span>
+    </h1>
+    <div id="cart-container">
+        <!-- Here Append All the cart Products  -->
+    </div>
+</body>
+<script>
+    let cartdata=JSON.parse(localStorage.getItem("cartData"))||[];
+    let maincont=document.getElementById("cart-container")
+    display(cartdata)
+    function display(cartdata){
+        maincont.innerHTML="";
+        cartdata.forEach((el,ind) => {
+            let card=document.createElement("div");
+            let img=document.createElement("img");
+            let title=document.createElement("h4");
+            let Price=document.createElement("p");
+            let btn=document.createElement("button");
+            let quantity=document.createElement("span");
+            let inc=document.createElement("button");
+            let dec=document.createElement("button");
+            quantity.textContent=el.quantity;
+            img.src=el.img;
+            title.textContent=el.title;
+            Price.textContent=`₹${el.price}`;
+            inc.textContent="+";
+            dec.textContent="-";
+            btn.textContent="Remove";
+            btn.addEventListener("click",()=>{
+               let removed=cartdata.splice(ind,1);
+
+               localStorage.setItem("cartData",JSON.stringify(cartdata));
+               display(cartdata)
+            })
+
+            inc.addEventListener("click",()=>{
+                el=el.quantity++;
+                localStorage.setItem("cartData",JSON.stringify(cartdata))
+                display(cartdata)
+            })
+            dec.addEventListener("click",()=>{
+                
+                if(el.quantity>1){
+                   el=el.quantity--; 
+                   localStorage.setItem("cartData",JSON.stringify(cartdata))
+                display(cartdata)
+                }
+               
+            })
+            card.append(img,title,Price,dec,quantity,inc,btn);
+            maincont.append(card);
+        });
+        let total=document.getElementById("cart-total");
+    let sum=0;
+    for(let i=0;i<cartdata.length;i++){
+        sum+=cartdata[i].price*cartdata[i].quantity
+    }
+    total.textContent=sum
+    }
+    
+</script>
+</html>

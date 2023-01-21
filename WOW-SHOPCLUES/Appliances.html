@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliances</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+            text-align: center;
+            font-family: "Robot",sans-serif;
+        }
+        #main>div{
+            width: 100%;
+            margin: auto;
+            height: 300px;
+        }
+        #main>div:hover{
+            border: 1px solid #49A3B5;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        #main>div>h4{
+            color: #5D5D5D;
+        }
+        #main>div>img{
+            height: 160px;
+        }
+        #main>div>button{
+            cursor: pointer;
+            background-color: #49A3B5;
+            border: none;
+            padding: 8px 12px 8px 12px;
+            border-radius: 12px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;;
+        }
+    </style>
+</head>
+<body>
+    <h1>Appliances</h1>
+    <div id="main">
+
+    </div>
+</body>
+<script>
+    async function fetchdata(){
+        try{
+            let res=await fetch("./Appliances.json");
+            let data=await res.json();
+            console.log(data.data);
+            display(data.data)
+        }catch(er){
+            console.log(er);
+        }
+    }
+    fetchdata()
+
+    let cartdata=JSON.parse(localStorage.getItem("cartData"))||[];
+    let maindiv=document.getElementById("main");
+    function display(data){
+        data.forEach((el) => {
+            let card=document.createElement("div");
+            let img=document.createElement("img");
+            let title=document.createElement("h4");
+            let Price=document.createElement("p");
+            let btn=document.createElement("button");
+            img.src=el.img;
+            title.textContent=el.title;
+            Price.textContent=`₹${el.price}`
+            btn.textContent="Add to Cart";           
+            btn.addEventListener("click",(e)=>{
+                event.preventDefault();
+                cartdata.push({...el,quantity:1});
+                localStorage.setItem("cartData",JSON.stringify(cartdata));
+            })
+            card.append(img,title,Price,btn);
+            maindiv.append(card);
+        });
+    }
+</script>
+</html>
