@@ -1,0 +1,40 @@
+{
+    "data":[
+        {   
+            "title":"i7ws Tws",
+            "category":"Offers",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/99370/280/1/145508146-99370521-1668508420.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"Stainless Steel",
+            "category":"Offers",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/84855/280/1/137076261-84855545-1668508422.jpg",
+            "price":"149",
+            "id":"2"
+           
+        },
+        {
+            "title": "MDR Headphones",
+            "category": "Offers",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/92954/280/1/141125300-92954383-1668508437.jpg",
+            "price": "550",
+            "id": "3"
+        },
+        {
+            "title": "Powerbank",
+            "category": "Offers",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/76469/280/1/132457112-76469774-1667302731.jpg",
+            "price": "399",
+            "id": "4"
+        },
+        {
+            "title": "Sushopping",
+            "category": "Offers",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/37100/280/1/95321050-37100252-1665756822.jpg",
+            "price": "529",
+            "id": "5"
+        }
+    ]
+}
