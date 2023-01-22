@@ -7,45 +7,77 @@
     <title>CartPage</title>
 </head>
 <style>
-    #Nav{
+body{
+        background-color: #EFF7FA;
+        width: 100%;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+}
+#Nav{
+        width: 100%;
         display: flex;
-        width: 90%;
-        border: 1px solid greenyellow;
-        height: 60px;
-        justify-content: space-around;
+        justify-content: left;
         align-items: center;
         margin: auto;
-        color: #49A3B5;
-    }
-    #Nav>a{
-        text-decoration: none;
-        font-size: 25px;
-        color: blueviolet;
-
-    }
-    #total{
-        text-align: center;
-    }
-    #cart-total{
-        color: green;
-    }
-    #cart-container{
-        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+}
+#logo{
+    width: 5%;
+    height: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+#Nav>h3{
+    cursor: pointer;
+}
+#arrow{
+    font-size: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.baza{
+    color: #49A3B5;
+}
+#cart-container{
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        gap: 10px;
-        border: 1px solid violet;
+        /* gap: 10px; */
         margin: auto;
         text-align: center;
+        background-color: white;
+        /* padding-top: 4px; */
     }
     #cart-container>div{
         width: 100%;
-            margin: auto;
-            height: 300px;
+        margin: auto;
+        height: 300px;
+        padding-bottom: 20px;
     }
+    #SecNav{
+        width: 95%;
+        margin: auto;
+        background-color: white;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 9px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    }
+    #SecNav>div>p{
+        margin-left: 20px;
+        padding-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        color: #363636;
+        margin-right: 20px;
+    }     
     #cart-container>div:hover{
         border: 1px solid #49A3B5;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
     }
     #cart-container>div>img{
@@ -60,21 +92,63 @@
         color: white;
         margin: 10px;
     }
+    #cart-total{
+        color: darkcyan;
+    }
+    #SecNav>div>select{
+        width: 100%;
+        font-size: 18px;
+    }
 
 </style>
 <body>
     <div id="Nav">
-        <h1>CartPage</h1>
-        <a href="/index.html">Home</a>
+        <div id="arrow">&#10229</div>
+        <img src="/wONDER SHOP.png" alt="" id="logo">
+        <h3 id="logoname">WOW SHOPCLUES <br> <span class="baza">bazaar</span></h3>
     </div>
-    <h1 id="total">
-        Your Total Cart Price is:- <span id="cart-total">0</span>
-    </h1>
+    <div id="SecNav">
+        <div>
+            <p>My Cart ( <span id="totalitems">0</span> Items )</p>
+        </div>
+        <div>
+            <select name="Select" id="Select">
+                <option value="">Sort by Category</option>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Sports">Sports</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Essentials">Essentials</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="Offers">Offers</option>
+                <option value="Appliances">Appliances</option>
+            </select>
+        </div>
+        <div>
+            <p id="total">
+                Total :- Rs.<span id="cart-total">0</span>
+            </p>
+        </div>
+       
+    </div>
     <div id="cart-container">
-        <!-- Here Append All the cart Products  -->
+        
     </div>
 </body>
 <script>
+
+    let arrow=document.getElementById("arrow");
+    arrow.addEventListener("click",()=>{
+        window.location.href="./index.html"
+    })
+    let logo=document.getElementById("logo");
+    logo.addEventListener("click",()=>{
+        window.location.href="./index.html"
+    })
+    let logoname=document.getElementById("logoname");
+    logoname.addEventListener("click",()=>{
+        window.location.href="./index.html"
+    })
     let cartdata=JSON.parse(localStorage.getItem("cartData"))||[];
     let maincont=document.getElementById("cart-container")
     display(cartdata)
@@ -126,7 +200,31 @@
         sum+=cartdata[i].price*cartdata[i].quantity
     }
     total.textContent=sum
+    let totalitems=document.getElementById("totalitems");
+    totalitems.textContent=cartdata.length
+
+    let Select=document.getElementById("Select");
+    Select.addEventListener("change",()=>{
+        // event.preventDefault();
+        let filtvalue=Select.value
+        cartdata=JSON.parse(localStorage.getItem("cartData"))||[];
+       let cartfilter=cartdata.filter((el)=>{
+        if(filtvalue===""){
+            return true;
+           
+        }
+        return el.category ==filtvalue
+            // if(el.category===Select.value){
+            //     return true;  
+            // }else{
+            //     return false;
+            // }
+        })
+        display(cartfilter)
+    })
     }
-    
+
+   
+
 </script>
 </html>
