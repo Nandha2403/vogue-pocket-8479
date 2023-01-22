@@ -1,0 +1,76 @@
+{
+    "data":[
+        {   
+            "title":"I-air tv",
+            "category":"Appliances",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/114327/280/1/152366425-114327532-1622547474.jpg",
+            "price":"12269",
+            "id":"1"
+        },
+        {   
+            "title":"Call-tv",
+            "category":"Appliances",
+            "img":"https://cdn.shopclues.com/images/thumbnails/66671/280/1/124838267-66671295-1516110145.jpg",
+            "price":"22749",
+            "id":"2"
+           
+        },
+        {
+            "title": "i-Graps tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/66671/280/1/124838237-66671202-1662682229.jpg",
+            "price": "25550",
+            "id": "3"
+        },
+        {
+            "title": "Samsung Tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images/thumbnails/54032/280/1/TV011485235956.jpg",
+            "price": "45999",
+            "id": "4"
+        },
+        {
+            "title": "TCl-Tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/113095/280/1/151958287-113095380-1612523649.jpg",
+            "price": "42329",
+            "id": "5"
+        },
+        {
+            "title": "Samsung Qled-Tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/114406/280/1/152391380-114406406-1623407557.jpg",
+            "price": "55602",
+            "id": "6"
+        },
+        {
+            "title": "Sansui Tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116338/280/1/153073978-116338465-1654669497.jpg",
+            "price": "35589",
+            "id": "7"
+        },
+        {
+            "title": "Samsung Tv",
+            "category": "Appliances",
+            "img": "https://cdn.shopclues.com/images/thumbnails/54032/280/1/TV011485235956.jpg",
+            "price": "45999",
+            "id": "8"
+        },
+        {
+            "title":"oloCall-tv",
+            "category":"Appliances",
+            "img":"https://cdn.shopclues.com/images/thumbnails/66671/280/1/124838267-66671295-1516110145.jpg",
+            "price":"22749",
+            "id":"9"
+        },
+        {
+            "title":"WINI-tv",
+            "category":"Appliances",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/114327/280/1/152366425-114327532-1622547474.jpg",
+            "price":"19269",
+            "id":"10"
+        }
+       
+    ]
+}

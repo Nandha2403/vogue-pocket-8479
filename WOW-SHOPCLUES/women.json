@@ -1,0 +1,76 @@
+{
+    "data":[
+        {   
+            "title":"BhuWla",
+            "category":"Women",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/59427/320/320/121025856-59427391-1664649251.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"Pack of three",
+            "category":"Women",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/60933/320/320/121139511-60933437-1664648674.jpg",
+            "price":"1749",
+            "id":"2"
+           
+        },
+        {
+            "title": "Ziyaa Black ",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115001/320/320/152622774-115001808-1629343785.jpg",
+            "price": "550",
+            "id": "3"
+        },
+        {
+            "title": "Svb",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/82088/320/320/135939083-82088344-1669590522.jpg",
+            "price": "1999",
+            "id": "4"
+        },
+        {
+            "title": "Rose silk",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/109494/320/320/150656872-109494622-1599548241.jpg",
+            "price": "329",
+            "id": "5"
+        },
+        {
+            "title": "Sannadh",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/107231/320/320/149870320-107231761-1590898384.jpg",
+            "price": "602",
+            "id": "6"
+        },
+        {
+            "title": "Fancy Cloth",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/109452/320/320/150639945-109452751-1599148741.jpg",
+            "price": "589",
+            "id": "7"
+        },
+        {
+            "title": "Yellow",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115896/320/320/152911068-115896468-1662507972.jpg",
+            "price": "499",
+            "id": "8"
+        },
+        {
+            "title": "Bhuwal Black",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/105417/320/320/149178188-105417436-1583909126.jpg",
+            "price": "959",
+            "id": "9"
+        },
+        {
+            "title": "Saree",
+            "category": "Women",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/12168/320/320/83905038-12168594-1662630836.jpg",
+            "price": "799",
+            "id": "10"
+        }
+       
+    ]
+}

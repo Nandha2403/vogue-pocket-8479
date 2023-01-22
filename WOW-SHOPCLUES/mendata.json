@@ -1,0 +1,110 @@
+{
+    "data":[
+        {   
+            "title":"Men's Red Jacket",
+            "category":"Men",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/116606/320/320/153166414-116606195-1669906210.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"Prijam Men's",
+            "category":"Men",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/109203/320/320/150594079-109203126-1662586835.jpg",
+            "price":"749",
+            "id":"2"
+           
+        },
+        {
+            "title": "29k Men's Leather",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116606/320/320/153166416-116606198-1663651564.jpg",
+            "price": "250",
+            "id": "3"
+        },
+        {
+            "title": "Concepts Men's T-shirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/90775/320/320/133334444-90775443-1664649857.jpg",
+            "price": "14999",
+            "id": "4"
+        },
+        {
+            "title": "Stylelogue",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/108959/320/320/150492132-108959051-1600327074.jpg",
+            "price": "329",
+            "id": "5"
+        },
+        {
+            "title": "Lambency",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/95773/320/320/143041346-95773806-1667021441.jpg",
+            "price": "602",
+            "id": "6"
+        },
+        {
+            "title": "Gladitor Shirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/102299/320/320/147512165-102299483-1565363013.jpg",
+            "price": "589",
+            "id": "7"
+        },
+        {
+            "title": "ZETES-Tshirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/110897/320/320/151058498-110897809-1602242120.jpg",
+            "price": "499",
+            "id": "8"
+        },
+        {
+            "title": "PASUE White Tshirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/109578/320/320/150691279-109578472-1600245772.jpg",
+            "price": "959",
+            "id": "9"
+        },
+        {
+            "title": "Odoky Model T-shirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/99738/320/320/145797985-99738125-1556899919.jpg",
+            "price": "799",
+            "id": "10"
+        },
+        {
+            "title": "Lambency",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/95773/320/320/143041346-95773806-1667021441.jpg",
+            "price": "602",
+            "id": "11"
+        },
+        {
+            "title": "Concepts Men's T-shirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/90775/320/320/133334444-90775443-1664649857.jpg",
+            "price": "14999",
+            "id": "12"
+        },
+        {   
+            "title":"Men's Red Jacket",
+            "category":"Men",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/116606/320/320/153166414-116606195-1669906210.jpg",
+            "price":"269",
+            "id":"13"
+        },
+        {
+            "title": "Lambency",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/95773/320/320/143041346-95773806-1667021441.jpg",
+            "price": "602",
+            "id": "14"
+        },
+        {
+            "title": "ZETES-Tshirt",
+            "category": "Men",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/110897/320/320/151058498-110897809-1602242120.jpg",
+            "price": "499",
+            "id": "15"
+        }
+    ]
+}

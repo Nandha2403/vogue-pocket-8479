@@ -1,0 +1,40 @@
+{
+    "data":[
+        {   
+            "title":"Handy Vegetable",
+            "category":"Kitchen",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/114286/280/1/152352100-114286913-1664653849.jpg",
+            "price":"269",
+            "id":"1"
+        },
+        {   
+            "title":"Ghee Dhani",
+            "category":"Kitchen",
+            "img":"https://cdn.shopclues.com/images1/thumbnails/116442/280/1/153100591-116442925-1665755902.jpg",
+            "price":"1749",
+            "id":"2"
+           
+        },
+        {
+            "title": "Titanic 7",
+            "category": "Kitchen",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/115821/280/1/152881951-115821563-1639753174.jpg",
+            "price": "550",
+            "id": "3"
+        },
+        {
+            "title": "Plastic folding",
+            "category": "Kitchen",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/116608/280/1/153167053-116608598-1664784698.jpg",
+            "price": "199",
+            "id": "4"
+        },
+        {
+            "title": "silver Shin",
+            "category": "Kitchen",
+            "img": "https://cdn.shopclues.com/images1/thumbnails/108649/280/1/150388647-108649014-1595662356.jpg",
+            "price": "329",
+            "id": "5"
+        }
+    ]
+}
